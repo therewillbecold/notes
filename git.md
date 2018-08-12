@@ -65,3 +65,6 @@ origin  git@github.com:therewillbecold/notes.git (push)
 推送到远程仓库
 git push origin master
 
+从远程仓库拉取一个分支的代码, 会与当前所在的本地分支的代码进行合并
+git pull orgin master
+
