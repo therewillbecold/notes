@@ -33,4 +33,35 @@ git commit -am <message>
 把本地仓库的commit历史提交到远程仓库
 git push origin master
 
+### 分支操作
+
+建立一个新的分支
+git branch -b <分支名>
+如: git branch -b liaoliao
+
+切换到一个已经存在的分支
+git checkout liaoliao
+
+列出当前所有的分支
+git branch -l
+
+列出所有分支, 包括远程仓库的分支
+git branch -la
+
+### 远程仓库
+
+给当前的本地仓库添加一个远程仓库
+
+ git remote add github-liaoliao git@github.com:therewillbecold/whatever.git
+
+列出远程仓库
+~]$ git remote -v
+输出:
+> github-liaoliao git@github.com:therewillbecold/whatever.git (fetch)
+github-liaoliao git@github.com:therewillbecold/whatever.git (push)
+origin  git@github.com:therewillbecold/notes.git (fetch)
+origin  git@github.com:therewillbecold/notes.git (push)
+
+推送到远程仓库
+git push origin master
 
