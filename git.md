@@ -23,9 +23,14 @@ git config --global core.quotepath false
 git status
 
 把一个路径或者文件添加到暂存区
-git add [path]
+git add <path>
 
 如 git add .  可以把当前的文件夹内的改变添加到暂存区
 
+把改动提交到本地仓库
+git commit -am <message>
+
+把本地仓库的commit历史提交到远程仓库
+git push origin master
 
 
