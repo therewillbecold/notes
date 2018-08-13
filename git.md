@@ -38,8 +38,8 @@ git push origin master
 ### 分支操作
 
 建立一个新的分支
-git branch -b <分支名>
-如: git branch -b liaoliao
+git checkout -b <分支名>
+如: git checkout -b liaoliao
 
 切换到一个已经存在的分支
 git checkout liaoliao
@@ -49,6 +49,9 @@ git branch -l
 
 列出所有分支, 包括远程仓库的分支
 git branch -la
+
+删除分支
+git branch -D <分支名>
 
 ### 远程仓库
 
@@ -64,11 +67,14 @@ github-liaoliao git@github.com:therewillbecold/whatever.git (push)
 origin  git@github.com:therewillbecold/notes.git (fetch)
 origin  git@github.com:therewillbecold/notes.git (push)
 
+删除远程仓库
+git remote remove github-liaoliao
+
 推送到远程仓库
 git push origin master
 
 从远程仓库拉取一个分支的代码, 会与当前所在的本地分支的代码进行合并
-git pull orgin master
+git pull origin master
 
 
 ### 命令行创建一个仓库
