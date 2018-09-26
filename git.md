@@ -56,8 +56,10 @@ git branch -D <分支名>
 ### 远程仓库
 
 给当前的本地仓库添加一个远程仓库
+git remote add github-liaoliao git@github.com:therewillbecold/whatever.git
 
- git remote add github-liaoliao git@github.com:therewillbecold/whatever.git
+把远程仓库先克隆下来,编辑完成后在推送上去
+git clone git@github.com:therewillbecold/google.git
 
 列出远程仓库
 ~]$ git remote -v
@@ -133,4 +135,56 @@ git stash drop <stash序号>
 .vscode/*
 ```
 
+# 文件操作命令
 
+
+cd 切换路径
+# 切换到桌面文件夹下
+~]$ cd ~/Desktop 
+
+pwd 输出当前所在的路径 print working directory
+~]$ pwd
+
+/c/Users/zhichaoxu/Desktop
+
+mkdir 新建文件夹 make directory
+# 新建 haha 文件夹
+~]$ mkdir haha
+touch 创建文件
+touch 文件名
+
+# 新建 test.md 文件
+~]$ touch test.md
+
+rm 删除文件
+rm 文件名
+
+~]$ rm test.md
+ 
+删除文件夹
+
+rm -rf 文件夹路径
+
+~]$ rm -rf haha
+ls 列出当前目录中的文件列表
+ls 文件夹路径
+
+~]$ ls
+
+列出文件详细信息
+
+ls -l 文件夹路径
+
+~]$ ls -l haha
+start 打开一个文件
+参数如果是文件夹, 则打开文件夹, 如果是一个文件, 则会尝试执行该文件
+
+start 文件路径
+
+# 打开haha文件夹
+~]$ start haha
+
+# 执行nginx.exe
+~]# start ./nginx.exe
+
+start是windows下的命令, 在linux下使用 open
